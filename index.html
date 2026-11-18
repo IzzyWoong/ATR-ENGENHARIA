@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inspeções e Laudos de Engenharia Mecânica | ATR Engenharia</title>
+    <meta name="description" content="Inspeções técnicas, laudos e ART para NR-11, NR-12, elevadores e playgrounds. Engenharia mecânica com orientações claras e segurança para sua operação." />
+    <meta name="author" content="ATR Engenharia" />
+    <meta name="theme-color" content="#102b46" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="atr-public-site-url" content="https://atr.eng.br" />
+    <link rel="canonical" href="https://atr.eng.br/" />
+    <link rel="preload" as="image" href="/gallery/atr-eng-playground-area-infantil-hero.avif" type="image/avif" fetchpriority="high" />
+    <meta property="og:title" content="Inspeções e Laudos de Engenharia Mecânica | ATR Engenharia" />
+    <meta property="og:description" content="Inspeções técnicas, laudos e ART para NR-11, NR-12, elevadores e playgrounds. Engenharia mecânica com orientações claras e segurança para sua operação." />
+    <meta property="og:image" content="https://atr.eng.br/atr-eng-compartilhamento.jpg" />
+    <meta property="og:image:alt" content="Logotipo da ATR Engenharia em fundo claro" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://atr.eng.br/" />
+    <meta property="og:site_name" content="ATR Engenharia" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Inspeções e Laudos de Engenharia Mecânica | ATR Engenharia" />
+    <meta name="twitter:description" content="Inspeções técnicas, laudos e ART para NR-11, NR-12, elevadores e playgrounds. Engenharia mecânica com orientações claras e segurança para sua operação." />
+    <meta name="twitter:image" content="https://atr.eng.br/atr-eng-compartilhamento.jpg" />
+    <meta name="twitter:image:alt" content="Logotipo da ATR Engenharia em fundo claro" />
+    <link rel="icon" type="image/svg+xml" href="/atr-eng-favicon.svg" />
+    <script id="atr-structured-data" type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://atr.eng.br/#atr-engenharia",
+            "name": "ATR Engenharia",
+            "description": "Engenharia mecânica com orientação de segurança técnica aplicável no campo.",
+            "url": "https://atr.eng.br/",
+            "logo": "https://atr.eng.br/atr-eng-logo-atr-engenharia.png",
+            "image": "https://atr.eng.br/atr-eng-compartilhamento.jpg",
+            "telephone": "+55 11 91849-7505",
+            "email": "atr_engenharia@hotmail.com",
+            "sameAs": ["https://www.instagram.com/atr_engenharia"],
+            "knowsAbout": ["Inspeções técnicas", "Laudos e ART", "NR-11", "NR-12", "Elevadores", "Playgrounds"]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://atr.eng.br/#site",
+            "name": "ATR Engenharia",
+            "url": "https://atr.eng.br/",
+            "inLanguage": "pt-BR",
+            "publisher": { "@id": "https://atr.eng.br/#atr-engenharia" }
+          }
+        ]
+      }
+    </script>
+    <script>
+      (() => {
+        const configuredOrigin = document.querySelector('meta[name="atr-public-site-url"]')?.getAttribute('content')?.trim();
+        const origin = configuredOrigin || window.location.origin;
+        const canonicalUrl = new URL('/', origin).href;
+        let canonical = document.querySelector('link[rel="canonical"]');
+        if (!canonical) {
+          canonical = document.createElement('link');
+          canonical.rel = 'canonical';
+          document.head.appendChild(canonical);
+        }
+        canonical.href = canonicalUrl;
+        document.querySelector('meta[property="og:url"]')?.setAttribute('content', canonicalUrl);
+        const socialImageUrl = new URL('/atr-eng-compartilhamento.jpg', canonicalUrl).href;
+        document.querySelector('meta[property="og:image"]')?.setAttribute('content', socialImageUrl);
+        document.querySelector('meta[name="twitter:image"]')?.setAttribute('content', socialImageUrl);
+
+        const structuredDataElement = document.getElementById('atr-structured-data');
+        if (structuredDataElement?.textContent) {
+          const structuredData = JSON.parse(structuredDataElement.textContent);
+          const organization = structuredData['@graph'].find((entity) => entity['@type'] === 'Organization');
+          const website = structuredData['@graph'].find((entity) => entity['@type'] === 'WebSite');
+          if (organization) {
+            const organizationId = String(organization['@id'] ?? '').split('#').pop();
+            organization['@id'] = `${canonicalUrl}#${organizationId || 'atr-engenharia'}`;
+            organization.url = canonicalUrl;
+            organization.logo = new URL('/atr-eng-logo-atr-engenharia.png', canonicalUrl).href;
+            organization.image = socialImageUrl;
+          }
+          if (website) {
+            const websiteId = String(website['@id'] ?? '').split('#').pop();
+            website['@id'] = `${canonicalUrl}#${websiteId || 'site'}`;
+            website.url = canonicalUrl;
+            if (organization) website.publisher = { '@id': organization['@id'] };
+          }
+          structuredDataElement.textContent = JSON.stringify(structuredData);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

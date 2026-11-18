@@ -1,0 +1,30 @@
+# ATR Engenharia
+
+> Engenharia mecânica aplicada com clareza, responsabilidade e visão de campo.
+
+A ATR Engenharia traduz requisitos técnicos e normas brasileiras em inspeções, laudos, projetos, relatórios e orientação para empresas, operações e instalações.
+
+## Site
+
+- [Início](https://atr.eng.br/#inicio): apresentação da ATR Engenharia e sua atuação.
+- [Serviços](https://atr.eng.br/#servicos): serviços de engenharia mecânica, inspeções, laudos, projetos e perícias.
+- [Como atuamos](https://atr.eng.br/#metodo): método de trabalho e etapas de atendimento.
+- [Sobre a ATR](https://atr.eng.br/#sobre): informações sobre a empresa e o engenheiro responsável.
+- [Dúvidas](https://atr.eng.br/#duvidas): respostas para perguntas frequentes.
+- [Contato](https://atr.eng.br/#contato): formulário, WhatsApp, telefone e e-mail.
+
+## Serviços principais
+
+- Inspeção e Laudo de Playground
+- Elevadores e Casa de Máquinas
+- Máquinas e Equipamentos conforme NR-12
+- Exaustão de Cozinhas
+- Máquinas Pesadas
+- Ar-Condicionado e PMOC
+- Perícia e Assistência Técnica Judicial
+
+## Contato
+
+- WhatsApp: [falar com a ATR Engenharia](https://wa.me/5511918497505)
+- E-mail: [atr_engenharia@hotmail.com](mailto:atr_engenharia@hotmail.com)
+- Instagram: [@atr_engenharia](https://www.instagram.com/atr_engenharia)

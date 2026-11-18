@@ -1,0 +1,7 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="180" height="180" rx="42" fill="#0853A1"/>
+  <rect x="5" y="5" width="170" height="170" rx="37" stroke="#4D8AC5" stroke-opacity=".72" stroke-width="4"/>
+  <circle cx="145" cy="35" r="22" stroke="#F2BC60" stroke-opacity=".9" stroke-width="4"/>
+  <path d="M23 137H157" stroke="#F2BC60" stroke-opacity=".34" stroke-width="3"/>
+  <text x="90" y="105" text-anchor="middle" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700" letter-spacing="-4">ATR</text>
+</svg>
